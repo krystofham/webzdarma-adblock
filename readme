@@ -1,0 +1,42 @@
+# Webzdarma Adblock
+
+Browserové rozšíření pro Firefox, které automaticky skrývá reklamy na webech hostovaných na české free webhostingové síti.
+
+## Podporované domény
+
+- `*.borec.cz`
+- `*.euweb.cz`
+- `*.chytrak.cz`
+- `*.kvalitne.cz`
+- `*.unas.cz`
+- `*.wz.cz`
+- `*.wz.sk`
+- `*.xf.cz`
+
+## Co dělá
+
+- Skryje fixní reklamní bannery (podle odstranění po footeru)
+
+## Instalace
+
+### Dočasně (testování)
+1. Otevři `about:debugging` ve Firefoxu
+2. Klikni **This Firefox**
+3. **Load Temporary Add-on** → vyber `manifest.json`
+4. Funguje do restartu prohlížeče
+
+### Nastálo (bez storu)
+1. Zaregistruj se na [addons.mozilla.org](https://addons.mozilla.org/developers/)
+2. Nahraj ZIP složky rozšíření
+3. Zvol **Self-distribution**
+4. Stáhni podepsaný `.xpi` soubor a nainstaluj
+
+## Struktura projektu
+webzdarma-adblock/
+├── manifest.json
+├── content.js
+├── LICENSE.md
+└── README.md
+
+## Disclaimer
+Používáš na vlastní riziko. Autor nenese žádnou odpovědnost za důsledky použití tohoto rozšíření. Viz `LICENSE`.
