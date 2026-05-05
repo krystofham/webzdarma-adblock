@@ -1,13 +1,14 @@
-function hideAfterFooter() {
+function removeAfterFooter() {
   const footer = document.querySelector('footer');
   if (!footer) return;
 
   let el = footer.nextElementSibling;
   while (el) {
-    el.style.display = "none";
-    el = el.nextElementSibling;
+    const next = el.nextElementSibling;
+    el.remove();
+    el = next;
   }
 }
 
-hideAfterFooter();
-document.addEventListener("DOMContentLoaded", hideAfterFooter);
+removeAfterFooter();
+document.addEventListener("DOMContentLoaded", removeAfterFooter);
