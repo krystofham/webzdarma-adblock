@@ -3,7 +3,24 @@
   "name": "Ad Hider",
   "version": "1.0",
   "content_scripts": [{
-    "matches": ["https://domena.cz/*"],
+    "matches": [
+      "https://*.borec.cz/*",
+      "http://*.borec.cz/*",
+      "https://*.euweb.cz/*",
+      "http://*.euweb.cz/*",
+      "https://*.chytrak.cz/*",
+      "http://*.chytrak.cz/*",
+      "https://*.kvalitne.cz/*",
+      "http://*.kvalitne.cz/*",
+      "https://*.unas.cz/*",
+      "http://*.unas.cz/*",
+      "https://*.wz.cz/*",
+      "http://*.wz.cz/*",
+      "https://*.wz.sk/*",
+      "http://*.wz.sk/*",
+      "https://*.xf.cz/*",
+      "http://*.xf.cz/*"
+    ],
     "js": ["content.js"]
   }]
 }
