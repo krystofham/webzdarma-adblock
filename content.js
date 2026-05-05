@@ -1,14 +1,10 @@
-function removeAfterFooter() {
-  const footer = document.querySelector('footer');
-  if (!footer) return;
+function removeLastTwoDivs() {
+  const allDivs = Array.from(document.body.querySelectorAll(':scope > div'));
+  const lastTwo = allDivs.slice(-2);
 
-  let el = footer.nextElementSibling;
-  while (el) {
-    const next = el.nextElementSibling;
-    el.remove();
-    el = next;
-  }
+  lastTwo.forEach(function(div) {
+    div.remove();
+  });
 }
 
-removeAfterFooter();
-document.addEventListener("DOMContentLoaded", removeAfterFooter);
+removeLastTwoDivs();
